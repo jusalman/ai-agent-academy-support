@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a2540"/>
+      <stop offset="100%" style="stop-color:#1b2a4e"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 배경 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <!-- 좌측 강조 바 -->
+  <rect x="0" y="0" width="8" height="630" fill="#2563eb"/>
+
+  <!-- 우하단 장식 원 -->
+  <circle cx="1100" cy="550" r="200" fill="rgba(37,99,235,0.06)"/>
+  <circle cx="1050" cy="500" r="120" fill="rgba(37,99,235,0.08)"/>
+
+  <!-- 상단 뱃지 -->
+  <rect x="72" y="72" width="320" height="40" rx="6" fill="rgba(255,255,255,0.1)"/>
+  <text x="88" y="98" font-family="Arial, sans-serif" font-size="18" font-weight="700" fill="#2563eb">🏢 기업/법인 전용 정부 지원 과정</text>
+
+  <!-- 메인 타이틀 -->
+  <text x="72" y="200" font-family="Arial, sans-serif" font-size="64" font-weight="900" fill="#ffffff">정부지원 90% 환급에</text>
+  <text x="72" y="280" font-family="Arial, sans-serif" font-size="64" font-weight="900" fill="#ffffff">참여 지원까지 더해</text>
+  <text x="72" y="360" font-family="Arial, sans-serif" font-size="64" font-weight="900" fill="#2563eb">AI 에이전트 워크샵</text>
+
+  <!-- 구분선 -->
+  <rect x="72" y="400" width="80" height="4" rx="2" fill="#2563eb"/>
+
+  <!-- 서브 텍스트 -->
+  <text x="72" y="450" font-family="Arial, sans-serif" font-size="26" fill="#b8c5d6">잔여 10% 부담 완화  |  10만원 참여 지원 상담 안내  |  1일 7시간 단기 집중</text>
+
+  <!-- 하단 정보 -->
+  <text x="72" y="560" font-family="Arial, sans-serif" font-size="20" fill="rgba(255,255,255,0.5)">한국생산성본부 주관 2026 인재키움 사업</text>
+
+  <!-- 우측 가격 박스 -->
+  <rect x="860" y="160" width="280" height="200" rx="16" fill="rgba(255,255,255,0.07)" stroke="rgba(37,99,235,0.4)" stroke-width="1.5"/>
+  <text x="870" y="205" font-family="Arial, sans-serif" font-size="16" fill="#b8c5d6" text-decoration="line-through">정가 100만원(인당)</text>
+  <text x="870" y="260" font-family="Arial, sans-serif" font-size="40" font-weight="900" fill="#2563eb">10만원 지원</text>
+  <text x="870" y="300" font-family="Arial, sans-serif" font-size="18" fill="#ffffff">수료 후 가능 조건</text>
+  <rect x="870" y="322" width="240" height="2" fill="rgba(255,255,255,0.1)"/>
+  <text x="870" y="348" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.6)">✓ 영업일 24시간 내 답변</text>
+</svg>
