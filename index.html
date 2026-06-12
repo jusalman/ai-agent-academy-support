@@ -1483,7 +1483,7 @@
       var APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwd91wmsyA41FyQupKgUObbI8koyMpoAJbtMH_28-BLehPHFVO545uaWcKrMxi3h9Px/exec';
 
       // 잔여 좌석 자동 업데이트
-      fetch(APPS_SCRIPT_URL + '?action=seats&sheetTab=' + encodeURIComponent('C_20만원혜택'))
+      fetch(APPS_SCRIPT_URL + '?action=seats&sheetTab=' + encodeURIComponent('지원금증정'))
         .then(function(r) { return r.json(); })
         .then(function(data) {
           if (data && typeof data.remaining === 'number') {
@@ -1597,7 +1597,7 @@
 
         var data = {
           landingVariant: 'academy_c_20만원혜택',
-          sheetTab: 'C_20만원혜택',
+          sheetTab: '지원금증정',
           companyType: document.querySelector('input[name="companyType"]:checked').value,
           companyName: document.getElementById('companyName').value,
           managerName: document.getElementById('managerName').value,
