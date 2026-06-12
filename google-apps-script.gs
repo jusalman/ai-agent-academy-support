@@ -4,12 +4,14 @@ var DEFAULT_SHEET_NAME = '지원금증정';
 var ALLOWED_SHEET_NAMES = {
   '실부담10%': true,
   '실부담0원': true,
-  '지원금증정': true
+  '지원금증정': true,
+  'C_20만원혜택': true
 };
 
 var HEADERS = [
   '타임스탬프',
   '랜딩 버전',
+  '사업자 유형',
   '기업명',
   '담당자 성명',
   '직책',
@@ -52,6 +54,7 @@ function doPost(e) {
     sheet.appendRow([
       new Date(),
       data.landingVariant || sheetName,
+      data.companyType || '',
       data.companyName || '',
       data.managerName || '',
       data.managerPosition || '',
@@ -103,6 +106,11 @@ function ensureHeader_(sheet) {
 
   var firstCell = sheet.getRange(1, 1).getValue();
   if (!firstCell) {
+    sheet.getRange(1, 1, 1, HEADERS.length).setValues([HEADERS]);
+    return;
+  }
+
+  if (sheet.getLastColumn() < HEADERS.length) {
     sheet.getRange(1, 1, 1, HEADERS.length).setValues([HEADERS]);
   }
 }
