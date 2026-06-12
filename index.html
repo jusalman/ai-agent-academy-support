@@ -1396,19 +1396,18 @@
             </div>
 
             <div class="form-group">
-              <label for="headcount">고용인원 / 예상 수강 인원</label>
+              <label for="headcount">예상 수강 인원</label>
               <select id="headcount" name="headcount" required="">
                 <option value="">선택해주세요</option>
-                <option value="10-19명">10-19명</option>
-                <option value="20-49명">20-49명</option>
-                <option value="50명 이상">50명 이상</option>
-                <option value="상담 후 확정">상담 후 확정</option>
+                <option value="1-5명">1-5명</option>
+                <option value="6-11명">6-11명</option>
+                <option value="12명 이상">12명 이상</option>
               </select>
               <div id="custom-alert">
-                🎁 고용인원 10명 이상 사업장 대상! 환급·참여 지원 혜택 가능 여부를 함께 확인해드립니다.
+                🎁 12인 이상 단체 신청 감지! '단독 커스텀 코스 + AI 전문가 역섭외' 안내를 함께 받으실 수 있습니다.
               </div>
               <div id="mixed-alert" style="display:none; background:#f0f7ff; border:2px solid #4a9eff; border-radius:8px; padding:16px 20px; margin-top:12px; font-size:14px; font-weight:600; color:#1a5fa8;">
-                👥 정확한 인원이 아직 정해지지 않았어도 상담 가능합니다. 담당자가 조건 확인을 도와드립니다.
+                👥 인원이 적어도 OK! 난이도가 맞는 타사 임직원과 함께하는 혼합 수강이 가능합니다.
               </div>
             </div>
 
@@ -1503,8 +1502,8 @@
       if (headcountSelect) {
         headcountSelect.addEventListener('change', function() {
           var val = this.value;
-          if (customAlert) customAlert.style.display = (val === '10-19명' || val === '20-49명' || val === '50명 이상') ? 'block' : 'none';
-          if (mixedAlert) mixedAlert.style.display = val === '상담 후 확정' ? 'block' : 'none';
+          if (customAlert) customAlert.style.display = val === '12명 이상' ? 'block' : 'none';
+          if (mixedAlert) mixedAlert.style.display = (val === '1-5명' || val === '6-11명') ? 'block' : 'none';
         });
       }
 
